@@ -1,0 +1,13 @@
+include:
+    DropboxBenchmark.rb : benchmark script for dropbox 
+    getAccessToken.rb   : getting your access_token and access_token_secret for DropboxBenchmark.rb
+    lib/                : libraries of dropbox-sdk and the dependancies. 
+    mkDBTestFiles.sh    : shell script for making test files (for mac??)
+
+howto:
+    1. register app on https://www.dropbox.com/developers
+    2. set your api_key & api_secret on getAccessToken.rb & DropboxBenchmark.rb
+    3. run 'source mkDBTestFiles.sh' to make test files (1, 5, 10, 20, 50)
+    4. run 'ruby getAccessToken.rb' to get access_token & access_token_secret
+    6. set your access_token & access_token_secret on DropboxBenchmark.rb 
+    5. run 'ruby DropboxBenchmark.rb' to start benchmark
