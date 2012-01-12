@@ -8,8 +8,6 @@ session = DropboxSession.new(APP_KEY, APP_SECRET)
 
 session.get_request_token
 
-session.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
-
 authorize_url = session.get_authorize_url
 
 puts "AUTHORIZING", authorize_url
